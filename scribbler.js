@@ -12,15 +12,15 @@ var getAll = function (selector, scope) {
 // setup typewriter effect in the terminal demo
 if (document.getElementsByClassName('demo').length > 0) {
   var i = 0;
-  var txt = `scribbler
-            [Entry mode; press Ctrl+D to save and quit; press Ctrl+C to quit without saving]
+  var txt = `Resume
+            [This is what I do]
 
-            ###todo for new year dinner party
+            ###Media Coordinator at Promobit, in Brazil
 
-            - milk
-            - butter
-            - green onion
-            - lots and lots of kiwis 🥝`;
+            - undergrad in Journalism
+            - master in Communication and Media Studies
+            - Full Stack student at Digital House Brasil
+            - coding and playing around`;
   var speed = 60;
 
   function typeItOut () {
