@@ -1,149 +1,114 @@
-<!doctype html>
-<html>
-  <head>
-      <meta charset="utf-8">
-      <meta name="description" content="">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Yolanda's Portfolio</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
-      <link rel="stylesheet" href="scribbler-global.css">
-      <link rel="stylesheet" href="scribbler-landing.css">
-      <link rel="author" href="humans.txt">
-  </head>
-  <body>
-    <nav>
-      <div class="logo"></div>
-      <ul class="menu">
-        <div class="menu__item toggle"><span></span></div>
-        <li class="menu__item"><a href="https://www.linkedin.com/in/yolanda-moretto-scudeller-2b664435/" class="link link--dark"><i class="fa fa-book"></i> LinkedIn</a></li>
-        <li class="menu__item"><a href="https://github.com/ymoretto" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
-      </ul>
-    </nav>
-    <div class="hero">
-      <h1 class="hero__title">Yolanda Scudeller</h1>
-      <p class="hero__description">Web writer | Master in Communication | Full Stack Developer student</p>
-    </div>
-    <div class="hero__terminal">
-      <pre>
-        <!-- Place your demo code here -->
-        <code class="shell-session demo">about_me ~ $ </code>
-      </pre>
-    </div>
-    <div class="wrapper">
-      <div class="installation">
-        <h3 class="section__title">Installation</h3>
-        <div class="tab__container">
-          <ul class="tab__menu">
-            <li class="tab active" data-tab="mac">challenges</li>
-            <li class="tab" data-tab="linux">projects</li>
-            <li class="tab" data-tab="win">other works</li>
-          </ul>
-          <pre class="nohighlight code">
-            <code class="tab__pane active mac">$  challenges for learning</code>
-            <code class="tab__pane linux">$  projects I've been working on</code>
-            <code class="tab__pane win">$  communication and media works</code>
-          </pre>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">    
+    <title>Yolanda Scudeller</title>
+</head>
+<!-- começo do body -->
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a class="navbar-brand" href="#">
+                <img src="images/chess-knight-solid.svg" alt="Logo" style="width:20px; margin-left:2vw;">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Projects
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Writing</a>
+                            <a class="dropdown-item" href="#">Programming</a>
+                            <a class="dropdown-item" href="#">Research</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <ul class="menu">
+                    <div class="menu__item toggle"><span></span></div>
+                    <li class="menu__item"><a href="https://www.linkedin.com/in/yolanda-moretto-scudeller-2b664435/" class="link link--dark"><i class="fa fa-book"></i> LinkedIn</a></li>
+                    <li class="menu__item"><a href="https://github.com/ymoretto" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
+                </ul>
+            </div>      
+         </nav>
+         <div class="hero">
+            <h1 class="hero__title">Yolanda Scudeller</h1>
+            <p class="hero__description">Web writer | Master in Communication | Full Stack Developer student</p>
         </div>
-      </div>
-      <div class="feature">
-        <div class="feature__item">
-          <h3 class="section__title"><a href="https://ymoretto.github.io/challenge1_frontendmentor">Fylo's Signup Landing Page</a></h3>
-          <p>Frontend Mentor's challenge on building a HTML / CSS landing page from the provided design, without frameworks.</p>
-        </div> 
-        <div class="feature__item">
-          <h3 class="section__title">File Syncing</h3>
-          <p>Save your file in Dropbox then you can access to it from anywhere.</p>
+        <div class="hero__terminal">
+            <pre>
+                <code class="shell-session demo">about_me ~ $ </code>
+            </pre>
         </div>
-        <div class="feature__item">
-          <h3 class="section__title">Secure</h3>
-          <p>Encrypt your notes optionally. No one can get to your secrets! </p>
+    </header>
+<!-- começando a parte do main agora -->
+    
+    <main>
+        <div class="row" style="margin-bottom:1px;">
+            <div class="card text-center col-lg-4 bg-light">
+                <div class="card-body">
+                    <h5 class="card-title">Writing</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Web writer and SEO</h6>
+                    <p class="card-text">My work as a web writer and content writer for social media.</p>
+                    <a href="#" class="card-link">Read more</a>
+                </div>
+            </div>
+
+            <div class="card text-center col-lg-4 bg-light">
+                <div class="card-body">
+                    <h5 class="card-title">Programming</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Front-end</h6>
+                    <p class="card-text">I'm a Full Stack Developer student at São Paulo. At the moment working at an integrative project.</p>
+                    <a href="#" class="card-link">Read More</a>
+                </div>
+            </div>
+
+            <div class="card text-center col-lg-4 bg-light">
+                <div class="card-body">
+                    <h5 class="card-title">Research</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Master's degree in Communication</h6>
+                    <p class="card-text">I focused my dissertation on alternative reality games and their impact as a playful structure being used as digital labour.</p>
+                    <a href="#" class="card-link">Read more</a>
+                </div>
+            </div>
         </div>
-        <div class="feature__item">
-          <h3 class="section__title">Configuration</h3>
-          <p>Maintain all your settings in a single <span class="code code--inline">config.json</span> file. Never need to redo the setting every single time jotting down a note.</p>
+    </main>
+
+
+<!-- começando o footer  -->
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted">This is a web page created by me, with Javascript's terminal by <a href="https://github.com/amiechen/codrops-scribbler">Scribbler</a></p>
         </div>
-        <div class="feature__item">
-          <h3 class="section__title">Highlightings</h3>
-          <p>For better readability, scribbler has a clean, beautiful color scheme allow you to scan files fast.</p>
-        </div>
-        <div class="feature__item">
-          <h3 class="section__title">Keybindings</h3>
-          <p>You can expect common keybindings for scribbler. Customize <span class="code code--inline">bindings.json</span> for your own liking! </p>
-        </div>
-      </div> 
-      <!-- <div class="keybinding">
-        <ul class="keybinding__detail">
-          <h3 class="keybinding__title">Default Keybindings</h3>
-          <li>Quit without saving <span class="keybinding__label">Ctrl+C</span></li>
-          <li>Save <span class="keybinding__label">Cmd+S</span></li>
-          <li>Save and Quit <span class="keybinding__label">Ctrl+D</span></li>
-          <li>Undo <span class="keybinding__label">Cmd+Z</span></li>
-        </ul>
-        <ul class="keybinding__detail">
-          <h3 class="keybinding__title">Markdown Keybindings</h3>
-          <li><span class="keybinding__label">Ctrl+A</span> Insert Link Markdown</li>
-          <li><span class="keybinding__label">Ctrl+I</span> Insert Image Markdown</li>
-          <li><span class="keybinding__label">Ctrl+V</span> Insert YouTube Video</li>
-          <li><span class="keybinding__label">Ctrl+T</span> Insert Table</li>
-        </ul>
-      </div>
-      <div class="callout">
-        <p>Read our documentation for advanced keybindings and customization</p>
-        <a href="doc.html" class="button--primary">Documentation</a>
-      </div> -->
-    </div>
-    <div class="changelog">
-      <div class="wrapper">
-        <h3 class="section__title">Changelog</h3>
-        <div class="changelog__item">
-          <div class="changelog__meta">
-            <h4 class="changelog__title">v0.7</h4>
-            <small class="changelog__date">10/12/2017</small>
-          </div>
-          <div class="changelog__detail">
-            <ul>
-              <li>Improving the writing workflow with better key bindings</li>
-              <li>Design updates</li>
-              <li>SSL Verification for web hooks</li>
-              <li>Render Emoji</li>
-            </ul>
-          </div>
-        </div>
-        <div class="changelog__item">
-          <div class="changelog__meta">
-            <h4 class="changelog__title">v0.6</h4>
-            <small class="changelog__date">7/30/2017</small>
-          </div>
-          <div class="changelog__detail">
-            <ul>
-              <li>Adding Unicode support</li>
-              <li>Basic text highlighting</li>
-              <li>Fresh Design</li>
-            </ul>
-          </div>
-        </div>
-        <div class="changelog__item">
-          <div class="changelog__meta">
-            <h4 class="changelog__title">v0.5</h4>
-            <small class="changelog__date">5/10/2017</small>
-          </div>
-          <div class="changelog__detail">
-            <ul>
-              <li>Save default md file in new folders</li>
-              <li>Ability to quick search on existing notes</li>
-            </ul>
-          </div>
-        </div>
-        <div class="changelog__callout">
-          <a href="#" class="button--secondary">Checkout Full Log</a>
-        </div>
-      </div>
-    </div>
-    <footer class="footer">Scribbler is a free HTML template created exclusively for <a href="https://tympanus.net/codrops/" target="_blank" class="link link--light">Codrops</a>.</footer>
+    </footer>
+    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <script src="scribbler.js"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 </html>
