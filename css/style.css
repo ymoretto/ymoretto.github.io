@@ -104,7 +104,9 @@ p {
   /* end of header */
 /* beginning of main */
 
-
+.navbar {
+  background-color:#232323;
+}
 
 
 
@@ -123,7 +125,8 @@ p {
   }
 
   p.text-muted {
-      margin-top:5px;
+      padding-top:5px;
+      margin-top:10px;
   }
 
 /* end of footer */
