@@ -1,0 +1,25 @@
+body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Raleway", sans-serif
+}
+
+.container {
+    overflow: hidden;
+  }
+  
+  .filterDiv {
+    float: left;
+    display: none; /* Hidden by default */
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+
+  a {
+    text-decoration:none;
+  }
+
+  a:hover.a-text {
+    text-decoration: underline;
+  }
